@@ -40,7 +40,7 @@ public class SendEmail {
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
             //title a latter
             message.setSubject(subject);
-            //Discription text messages
+            //Discription text message
             message.setText(text);
             //send email
             Transport.send(message);
